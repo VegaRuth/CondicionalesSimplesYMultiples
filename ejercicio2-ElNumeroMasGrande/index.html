@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>¿CUÁL ES EL NÚMERO MAS GRANDE?</title>
+			<style>
+			body{
+				font-family: sans-serif;
+			}
+			table {
+				border-color: black;
+				text-align: center;
+				width: 100%;
+			}
+			.titulo{
+				background-color:#08088A ;
+				color: white;
+			}
+			.content{
+				width: 100%;
+				height: auto;
+			}
+			.section1{
+				width: 27%;
+				display: inline-table;
+				height: auto;
+				padding: 5%;
+			}
+			.section2{
+				width: 48%;
+				display: inline-table;
+				height: auto;
+				padding-top: 5%;
+			}
+			img{
+				width: 120%;
+				height: auto;
+			}
+			span{
+				color: #E2800F;
+			    font-style: italic;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.constante{
+				color: #088A85;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.cond{
+				color: #AF20A0;
+			    font-weight: bolder;
+			    font-size: large;
+			    font-family: sans-serif;
+			}
+	</style>
+	</head>
+	<body>
+	<center>
+		<h1>Ejercicio #2: ¿CUÁL ES EL NÚMERO MAS GRANDE? </h1>
+		<p>
+		Se desea implementar un algoritmo para determinar cuál de dos valores proporcionados es el mayor. Representarlo con pseudocódigo y diagrama de flujo
+		</p>
+	</center>
+	<div class="content">
+			<div class="section1">
+				<h2>Pseudocódigo</h2>
+				<table>
+				<caption><strong><h3>Variables</h3></strong></caption>
+						<tr>
+							<td class="titulo">
+								<strong> Nombre</strong>
+							</td>
+							<td class="titulo">
+								<strong> Descripción</strong>
+							</td>
+							<td class="titulo">
+								<strong> Tipo</strong>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 n1
+							</td>
+							<td>
+								Primer valor a comparar
+							</td>
+							<td>
+								Int
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 n2
+							</td>
+							<td>
+								Segundo valor a comparar
+							</td>
+							<td>
+								Int
+							</td>
+						</tr>
+				</table>
+				<br>
+				<br>
+				<center><h3>Proceso</h3></center>
+				<ol>
+					<li>Inicio</li>
+					<li>Leer <span>"n1"</span> y <span>"n2"</span></li>
+					<li><strong>Condición</strong>
+					<br>
+					<p><span class="cond"> Si </span> <span>"n1"</span> es < <span>"n2"</span>, <span class="cond">entonces</span> alerta "es menor";
+					</p>
+					<p><span class="cond"> Y si </span> <span>"n1"</span> es > <span>"n2"</span>, <span class="cond">entonces</span> alerta "es mayor";</p>
+					<span class="cond"> Si no, entonces: </span> alerta "es igual";</li>
+					<li>Fin</li>
+				</ol>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<img src="eje2.png">
+			</div>
+		</div>
+	<!--/////////////////SCRIPTS/////////////////-->
+	<script type="text/javascript" src="Js/main.js"></script>
+	</body>
+</html>

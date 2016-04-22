@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VIAJE ESCOLAR</title>
+			<style>
+			body{
+				font-family: sans-serif;
+			}
+			table {
+				border-color: black;
+				text-align: center;
+				width: 100%;
+			}
+			.titulo{
+				background-color:#08088A ;
+				color: white;
+			}
+			.content{
+				width: 100%;
+				height: auto;
+			}
+			.section1{
+				width: 27%;
+				display: inline-table;
+				height: auto;
+				padding: 5%;
+			}
+			.section2{
+				width: 48%;
+				display: inline-table;
+				height: auto;
+				padding-top: 5%;
+			}
+			img{
+				width: 120%;
+				height: 400px;
+			}
+			span{
+				color: #E2800F;
+			    font-style: italic;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.cond{
+				color: #AF20A0;
+			    font-weight: bolder;
+			    font-size: large;
+			    font-family: sans-serif;
+			}
+	</style>
+	</head>
+	<body>
+	<center>
+		<h1>Ejercicio #7: VIAJE ESCOLAR</h1>
+		<p>
+		El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+		Realice un algoritmo que permita determinar el pago a la compañía de autobuses y lo que debe pagar cada alumno por el viaje (represente en pseudocódigo y diagrama de flujo)
+		</p>
+		</center>
+		<div class="content">
+			<div class="section1">
+				<h2>Pseudocódigo</h2>
+				<table>
+				<caption><strong><h3>Variables</h3></strong></caption>
+						<tr>
+							<td class="titulo">
+								Nombre
+							</td>
+							<td class="titulo">
+								Descripción
+							</td>
+							<td class="titulo">
+								Tipo
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 numero_alumnos
+							</td>
+							<td>
+								Primer valor comparar
+							</td>
+							<td>
+								Int
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 pago_alumno
+							</td>
+							<td>
+								Resultado de operación
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 pago_viaje
+							</td>
+							<td>
+								Resultado de operación
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+				</table>
+				<br>
+				<br>
+				<center><h3>Proceso</h3></center>
+				<ol>
+					<li>Inicio</li>
+					<li>Leer <span>"numero_alumnos"</span></li>
+					<li><strong>Condición</strong>
+					<br>
+					<p><span class="cond"> Si </span> <span>"numero_alumnos"</span> es < 30 && > 0, <span class="cond">entonces</span> <span>"pago_alumno"</span> es = 4000 / <span>"numero_alumnos"</span>, alerta " el pago por alumno es de "<span>"pago_alumno"</span>;
+					</p>
+					<p><span class="cond"> Y si </span> <span> "numero_alumnos"</span> es >= 30 && < 50 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*95, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					</p>
+					<p><span class="cond"> Y si </span> <span> "numero_alumnos"</span> es >= 50 && < 100 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*70, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					</p>
+					<span class="cond"> Si no, entonces:</span> <span>"pago_viaje"</span> es = <span>"numero_alumnos"</span>*65, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					</li>
+					<li>Fin</li>
+				</ol>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<img src="eje7.png">
+			</div>
+		</div>
+	<!--/////////////////SCRIPTS/////////////////-->
+	<script type="text/javascript" src="Js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HAMBURGUESAS “El náufrago satisfecho”</title>
+			<style>
+			body{
+				font-family: sans-serif;
+			}
+			table {
+				border-color: black;
+				text-align: center;
+				width: 100%;
+			}
+			.titulo{
+				background-color:#08088A ;
+				color: white;
+			}
+			.content{
+				width: 100%;
+				height: auto;
+			}
+			.section1{
+				width: 40%;
+				display: inline-table;
+				height: auto;
+				padding: 5%;
+			}
+			.section2{
+				width: 35%;
+				display: inline-table;
+				height: auto;
+				padding-top: 5%;
+			}
+			img{
+				width: 120%;
+				height: auto;
+			}
+			span{
+				color: #E2800F;
+			    font-style: italic;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.constante{
+				color: #088A85;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.cond{
+				color: #AF20A0;
+			    font-weight: bolder;
+			    font-size: large;
+			    font-family: sans-serif;
+			}
+	</style>
+	</head>
+	<body>
+	<center>
+		<h1>Ejercicio #9: HAMBURGUESAS “El náufrago satisfecho”</h1>
+		<p>
+		“El náufrago satisfecho” ofrece hamburguesas sencillas, dobles y triples, las cuales tienen un costo de $20.00, $25.00 y $28.00 respectivamente. La empresa acepta tarjetas de crédito con un cargo de 5 % sobre la compra. Suponiendo que los clientes adquieren sólo un tipo de hamburguesa, realice un algoritmo para determinar cuánto debe pagar una persona por N hamburguesas.
+
+		Represéntelo mediante diagrama de flujo y pseudocódigo
+		</p>
+		</center>
+		<div class="content">
+			<div class="section1">
+				<h2>Pseudocódigo</h2>
+				<table>
+				<caption><strong><h3>Variables</h3></strong></caption>
+						<tr>
+							<td class="titulo">
+								Nombre
+							</td>
+							<td class="titulo">
+								Descripción
+							</td>
+							<td class="titulo">
+								Tipo
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 tipo_hamburguesa
+							</td>
+							<td>
+								Valor a comparar
+							</td>
+							<td>
+								string
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 numero_hamburguesas
+							</td>
+							<td>
+								Valor a multiplicar
+							</td>
+							<td>
+								int
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 pago_tarjeta
+							</td>
+							<td>
+								Valos a Comparar
+							</td>
+							<td>
+								Bolean
+							</td>
+						</tr>
+				</table>
+				<br>
+				<br>
+				<center><h3>Proceso</h3></center>
+				<ol>
+					<li>Inicio</li>
+					<li>Leer <span>"tipo_hamburguesa"</span>, <span>"numero_hambuerguesas"</span> y <span>"pago_tarjeta"</span></li>
+					<li><strong>Condición</strong>
+					<br>
+					<p><span class="cond"> Si </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "sencilla" </span> || <span class="constante"> "Sencilla" </span> || <span class="constante"> "SENCILLA" </span><span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"pago_total"</span> es = <span>"numero_hamburguesas"</span> * 20,	
+						
+							<ul><!--condicion if anidado-->
+								<li>
+									<span class="cond"> Si </span> <span>"pago_tarjeta"</span> es identico a <span class="constante"> "si" </span> || <span class="constante"> "Si" </span>|| <span class="constante"> "SI" </span> <span class="cond">entonces</span>
+									<p>
+									<span>"cargo_tarjeta"</span> es = <span>20 * .05</span>;
+									</p>
+									<p>				
+									<strong>alerta:</strong> El subtotal <span>"numero_hamburguesas" "tipo_hamburguesa" </span> el cargo es de  <span>"cargo_tarjeta " * "numero_hamburguesas"</span>,el total es de <span>"pago_total"</span> + (<span>cargo_tarjeta * numero_hamburguesas</span>);
+									</p>
+								</li>
+								<li>
+									<span class="cond"> Si no,</span>
+									<p>				
+									<strong>alerta:</strong> El total <span>"numero_hamburguesas" "tipo_hamburguesa"</span> es de  <span>"pago_total"</span>;
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul><!--fin condicion-->
+					<p><span class="cond">Y Si </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "doble" </span> || <span class="constante"> "Doble" </span> || <span class="constante"> "DOBLE" </span><span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"pago_total"</span> es = <span>"numero_hamburguesas"</span> * 25,	
+						
+							<ul><!--condicion if anidado-->
+								<li>
+									<span class="cond"> Si </span> <span>"pago_tarjeta"</span> es identico a <span class="constante"> "si" </span> || <span class="constante"> "Si" </span>|| <span class="constante"> "SI" </span> <span class="cond">entonces</span>
+									<p>
+									<span>"cargo_tarjeta"</span> es = <span>25 * .05</span>;
+									</p>
+									<p>				
+									<strong>alerta:</strong> El subtotal <span>"numero_hamburguesas" "tipo_hamburguesa" </span> el cargo es de  <span>"cargo_tarjeta " * "numero_hamburguesas"</span>,el total es de <span>"pago_total"</span> + (<span>cargo_tarjeta * numero_hamburguesas</span>);
+									</p>
+								</li>
+								<li>
+									<span class="cond"> Si no,</span>
+									<p>				
+									<strong>alerta:</strong> El total <span>"numero_hamburguesas" "tipo_hamburguesa"</span> es de  <span>"pago_total"</span>;
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul><!--fin condicion-->
+					<p><span class="cond">Y Si </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "triple" </span> || <span class="constante"> "Triple" </span> || <span class="constante"> "TRIPLE" </span><span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"pago_total"</span> es = <span>"numero_hamburguesas"</span> * 28,	
+						
+							<ul><!--condicion if anidado-->
+								<li>
+									<span class="cond"> Si </span> <span>"pago_tarjeta"</span> es identico a <span class="constante"> "si" </span> || <span class="constante"> "Si" </span>|| <span class="constante"> "SI" </span> <span class="cond">entonces</span>
+									<p>
+									<span>"cargo_tarjeta"</span> es = <span>28 * .05</span>;
+									</p>
+									<p>				
+									<strong>alerta:</strong> El subtotal <span>"numero_hamburguesas" "tipo_hamburguesa" </span> el cargo es de  <span>"cargo_tarjeta " * "numero_hamburguesas"</span>,el total es de <span>"pago_total"</span> + (<span>cargo_tarjeta * numero_hamburguesas</span>);
+									</p>
+								</li>
+								<li>
+									<span class="cond"> Si no,</span>
+									<p>				
+									<strong>alerta:</strong> El total <span>"numero_hamburguesas" "tipo_hamburguesa"</span> es de  <span>"pago_total"</span>;
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul><!--fin condicion-->
+					<p><span class="cond"> Si no </span>,</p>		
+					<strong>alerta:</strong> El subtotal <span>"numero_hamburguesas" "tipo_hamburguesa" </span> el cargo es de  <span>"cargo_tarjeta " * "numero_hamburguesas"</span>,el total es de <span>"pago_total"</span> + (<span>cargo_tarjeta * numero_hamburguesas</span>);
+					</p><!--fin de condicion-->
+					
+					<li>Fin</li>
+				</ol>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<img src="eje9.png">
+			</div>
+		</div>
+	<!--/////////////////SCRIPTS/////////////////-->
+	<script type="text/javascript" src="Js/main.js"></script>
+	</body>
+</html>

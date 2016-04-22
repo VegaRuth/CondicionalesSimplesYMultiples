@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FABRICAS "EL COMETA"</title>
+	<style>
+			body{
+				font-family: sans-serif;
+			}
+			table {
+				border-color: black;
+				text-align: center;
+				width: 100%;
+			}
+			.titulo{
+				background-color:#08088A ;
+				color: white;
+			}
+			.content{
+				width: 100%;
+				height: auto;
+			}
+			.section1{
+				width: 31%;
+				display: inline-table;
+				height: auto;
+				padding: 5%;
+			}
+			.section2{
+				width: 44%;
+				display: inline-table;
+				height: auto;
+				padding-top: 5%;
+			}
+			img{
+				width: 120%;
+				height: auto;
+			}
+			span{
+				color: #E2800F;
+			    font-style: italic;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.constante{
+				color: #088A85;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.cond{
+				color: #AF20A0;
+			    font-weight: bolder;
+			    font-size: large;
+			    font-family: sans-serif;
+			}
+	</style>
+		
+	</head>
+	<body>
+	<center>
+		<h1>Ejercicio #10: FABRICAS "EL COMETA"</h1>
+		<p>
+		Fábricas “El cometa” produce artículos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, para esto hay que considerar lo siguiente:</p>
+
+		<p>Costo de producción = materia prima + mano de obra + gastos de fabricación.</p>
+		<p>Precio de venta = costo de producción + 45 % de costo de producción.</p>
+		<p>El costo de la mano de obra se obtiene de la siguiente forma:</p>
+
+		<p>para los productos con clave 3 o 4 se carga 75 % del costo de la materia prima; para los que tienen clave 1 y 5 se carga 80 %, y para los que tienen clave 2 o 6, 85 %.
+
+		<p>Para calcular el gasto de fabricación se considera lo siguiente:</p>
+
+		<p>Si el artículo que se va a producir tiene claves 2 o 5, este gasto representa 30 % sobre el costo de la materia prima;</p>
+		<p>Si las claves son 3 o 6, representa 35 %;</p>
+		<p>Si las claves son 1 o 4, representa 28 %.</p>
+		<p>La materia prima tiene el mismo costo para cualquier clave.</p>
+
+		<p>Represente mediante el diagrama de flujo y el pseudocódigo</p>
+		</center>
+		<div class="content">
+			<div class="section1">
+				<h2>Pseudocódigo</h2>
+				<table>
+				<caption><strong><h3>Variables</h3></strong></caption>
+						<tr>
+							<td class="titulo">
+								Nombre
+							</td>
+							<td class="titulo">
+								Descripción
+							</td>
+							<td class="titulo">
+								Tipo
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 costo_habitacion
+							</td>
+							<td>
+								Primer valor a multiplicar
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 estancia
+							</td>
+							<td>
+								Segundo valor a multiplicar
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 respuesta
+							</td>
+							<td>
+								Resultado de la multiplicación
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+				</table>
+				<br>
+				<br>
+				<center><h3>Proceso</h3></center>
+				<ol>
+					<li>Inicio</li>
+					<li>Leer <span>"costo_habitacion"</span> y <span> "estancia"</span></li>
+					<li>Hacer <span>"respuesta"</span> = <span>"costo_habitacion"</span> * <span> "estancia"</span></li>
+					<li>Escribir <span>"respuesta"</span> </li>
+					<li>Fin</li>
+				</ol>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<img src="eje10.png">
+			</div>
+		</div>
+	<!--/////////////////SCRIPTS/////////////////-->
+	<script type="text/javascript" src="Js/main.js"></script>
+	</body>
+</html>

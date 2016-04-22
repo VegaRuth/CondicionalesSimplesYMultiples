@@ -1,0 +1,215 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>COMPAÑIA DE AUTOBUSES</title>
+			<style>
+			body{
+				font-family: sans-serif;
+			}
+			table {
+				border-color: black;
+				text-align: center;
+				width: 100%;
+			}
+			.titulo{
+				background-color:#08088A ;
+				color: white;
+			}
+			.content{
+				width: 100%;
+				height: auto;
+			}
+			.section1{
+				width: 30%;
+				display: inline-table;
+				height: auto;
+				padding: 5%;
+			}
+			.section2{
+				width: 45%;
+				display: inline-table;
+				height: auto;
+				padding-top: 5%;
+			}
+			img{
+				width: 120%;
+				height: auto;
+			}
+			span{
+				color: #E2800F;
+			    font-style: italic;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.constante{
+				color: #088A85;
+			    font-family: serif;
+			    font-weight: bolder;
+			}
+			.cond{
+				color: #AF20A0;
+			    font-weight: bolder;
+			    font-size: large;
+			    font-family: sans-serif;
+			}
+	</style>
+	</head>
+	<body>
+	<center>
+		<h1>Ejercicio #8: COMPAÑIA DE AUTOBUSES</h1>
+		<p>
+		Una compañía de viajes cuenta con tres tipos de autobuses (A, B y C), cada uno tiene un precio por kilómetro recorrido por persona, los costos respectivos son $2.0, $2.5 y $3.0. Se requiere determinar el costo total y por persona del viaje considerando que cuando éste se presupuesta debe haber un mínimo de 20 personas, de lo contrario el cobro se realiza con base en este número límite
+		</p>
+		</center>
+		<div class="content">
+			<div class="section1">
+				<h2>Pseudocódigo</h2>
+				<table>
+				<caption><strong><h3>Variables</h3></strong></caption>
+						<tr>
+							<td class="titulo">
+								Nombre
+							</td>
+							<td class="titulo">
+								Descripción
+							</td>
+							<td class="titulo">
+								Tipo
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 tipo_autobus
+							</td>
+							<td>
+								Valor a comparar
+							</td>
+							<td>
+								char
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 km_distancia
+							</td>
+							<td>
+								Valor a multiplicar
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 costo_persona
+							</td>
+							<td>
+								Resultado de una operación
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 costo_total
+							</td>
+							<td>
+								Resultado de una operación
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+				</table>
+				<ol>
+					<li>Inicio</li>
+					<li>Leer <span>"tipo_autobus"</span> y <span>"km_distancia"</span></li>
+					<li><strong>Condición</strong>
+					<br>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "a" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "A" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "b" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "B" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "c" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<p><span class="cond"> Case </span> <span>"tipo_autobus"</span> es <span class="constante"> "C" </span>,<span class="cond">entonces</span></p>
+					<ul>
+						<li>
+							<span>"costo_persona"</span> es = <span>"km_distancia"</span> * 2,	
+						</li>
+						<li>
+							y <span>"costo_total"</span> es = <span>"costo_persona"</span> * 20,
+						</li>
+					</ul>
+					<p>				
+					<strong>alerta:</strong> el costo por persona es de <span>"costo_persona"</span> y el costo total de $ <span>"costo_total"</span>;
+					</p>
+					<span class="cond"> Default, entonces:</span> <strong>alerta:</strong> el autobus no existe;
+					</li>
+					<li>Fin</li>
+				</ol>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<img src="eje8.png">
+			</div>
+		</div>
+		<!--/////////////////SCRIPTS/////////////////-->
+	<script type="text/javascript" src="Js/main.js"></script>
+	</body>
+</html>
