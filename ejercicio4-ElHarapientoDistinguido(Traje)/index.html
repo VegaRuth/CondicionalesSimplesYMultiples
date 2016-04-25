@@ -32,7 +32,7 @@
 				padding: 5%;
 			}
 			img{
-				width: 120%;
+				width: 100%;
 				height: auto;
 			}
 			span{
@@ -82,10 +82,10 @@
 						</tr>
 						<tr>
 							<td>
-							 litros
+							 precio
 							</td>
 							<td>
-								Primer valor a divir
+								Primer valor a multiplicar
 							</td>
 							<td>
 								Float
@@ -93,10 +93,21 @@
 						</tr>
 						<tr>
 							<td>
-							 respuesta
+							 ahorro
 							</td>
 							<td>
-								Resultado de la división
+								Primer valor a multiplicar
+							</td>
+							<td>
+								Float
+							</td>
+						</tr>
+						<tr>
+							<td>
+							 precio_final
+							</td>
+							<td>
+								Resultado de la operación
 							</td>
 							<td>
 								Float
@@ -107,10 +118,25 @@
 				<br>
 				<center><h3>Proceso</h3></center>
 				<ol>
-					<li>Inicio</li>
-					<li>Leer <span>"litros"</span></li>
-					<li>Hacer <span>"respuesta"</span> = <span>"litros"</span> / <span class="constante"> 3.785 </span></li>
-					<li>Escribir <span>"respuesta"</span> </li>
+					<li>
+						Inicio
+					</li>
+					<li>Leer 
+						<span>"precio"</span>
+					</li>
+					<li>
+						<strong>
+							Condición
+						</strong>
+					<br>
+						<p><span class="cond"> Si </span> <span>"precio"</span> es >= 2500  <span class="cond">entonces</span> </p> 
+						<p><span>var ahorro </span>= <span class="constante"> .15 </span>* <span>precio</span>;</p>
+						<p><span>var precio_final</span> = <span> precio </span> - <span>ahorro</span>;</p>
+
+						<p><span class="cond"> Si no </span></p>
+						<p><span>var ahorro </span>= <span class="constante"> .8 </span>* <span>precio</span>;</p>
+						<p><span>var precio_final</span> = <span> precio </span> - <span>ahorro</span>;</p>
+					<li><strong>alerta:</strong>"El descuento es de <span>"ahorro"</span>, costo final es de <span> "precio_final"</span> </li>
 					<li>Fin</li>
 				</ol>
 			</div>

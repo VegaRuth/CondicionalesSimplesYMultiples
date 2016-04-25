@@ -18,21 +18,22 @@
 			.content{
 				width: 100%;
 				height: auto;
+				padding: 0%;
 			}
 			.section1{
-				width: 40%;
-				display: inline-table;
-				height: auto;
-				padding: 5%;
-			}
-			.section2{
 				width: 35%;
 				display: inline-table;
 				height: auto;
 				padding-top: 5%;
 			}
+			.section2{
+				width: 48%;
+				display: inline-table;
+				height: auto;
+				padding: 5% 0% 0% 5%;
+			}
 			img{
-				width: 120%;
+				width: 100%;
 				height: auto;
 			}
 			span{
@@ -113,9 +114,13 @@
 							</td>
 						</tr>
 				</table>
-				<br>
-				<br>
-				<center><h3>Proceso</h3></center>
+			</div>
+			<div class="section2">
+				<h2>Diagrama de Flujo</h2>
+				<center> <img src="eje9.png"> </center>
+			</div>
+			<div>
+				<h3>Proceso</h3>
 				<ol>
 					<li>Inicio</li>
 					<li>Leer <span>"tipo_hamburguesa"</span>, <span>"numero_hambuerguesas"</span> y <span>"pago_tarjeta"</span></li>
@@ -145,7 +150,7 @@
 							</ul>
 						</li>
 					</ul><!--fin condicion-->
-					<p><span class="cond">Y Si </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "doble" </span> || <span class="constante"> "Doble" </span> || <span class="constante"> "DOBLE" </span><span class="cond">entonces</span></p>
+					<p><span class="cond">Si no </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "doble" </span> || <span class="constante"> "Doble" </span> || <span class="constante"> "DOBLE" </span><span class="cond">entonces</span></p>
 					<ul>
 						<li>
 							<span>"pago_total"</span> es = <span>"numero_hamburguesas"</span> * 25,	
@@ -169,7 +174,7 @@
 							</ul>
 						</li>
 					</ul><!--fin condicion-->
-					<p><span class="cond">Y Si </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "triple" </span> || <span class="constante"> "Triple" </span> || <span class="constante"> "TRIPLE" </span><span class="cond">entonces</span></p>
+					<p><span class="cond">Si no </span> <span>"tipo_hamburguesa"</span> es identico a <span class="constante"> "triple" </span> || <span class="constante"> "Triple" </span> || <span class="constante"> "TRIPLE" </span><span class="cond">entonces</span></p>
 					<ul>
 						<li>
 							<span>"pago_total"</span> es = <span>"numero_hamburguesas"</span> * 28,	
@@ -193,16 +198,12 @@
 							</ul>
 						</li>
 					</ul><!--fin condicion-->
-					<p><span class="cond"> Si no </span>,</p>		
+					<p><span class="cond">Y si no </span>,</p>		
 					<strong>alerta:</strong> El subtotal <span>"numero_hamburguesas" "tipo_hamburguesa" </span> el cargo es de  <span>"cargo_tarjeta " * "numero_hamburguesas"</span>,el total es de <span>"pago_total"</span> + (<span>cargo_tarjeta * numero_hamburguesas</span>);
 					</p><!--fin de condicion-->
 					
 					<li>Fin</li>
 				</ol>
-			</div>
-			<div class="section2">
-				<h2>Diagrama de Flujo</h2>
-				<img src="eje9.png">
 			</div>
 		</div>
 	<!--/////////////////SCRIPTS/////////////////-->

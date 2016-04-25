@@ -20,20 +20,20 @@
 				height: auto;
 			}
 			.section1{
-				width: 27%;
+				width: 35%;
 				display: inline-table;
 				height: auto;
 				padding: 5%;
 			}
 			.section2{
-				width: 48%;
+				width: 40%;
 				display: inline-table;
 				height: auto;
 				padding-top: 5%;
 			}
 			img{
-				width: 120%;
-				height: 400px;
+				width: 130%;
+				height: auto;
 			}
 			span{
 				color: #E2800F;
@@ -116,13 +116,15 @@
 					<li>Leer <span>"numero_alumnos"</span></li>
 					<li><strong>Condición</strong>
 					<br>
-					<p><span class="cond"> Si </span> <span>"numero_alumnos"</span> es < 30 && > 0, <span class="cond">entonces</span> <span>"pago_alumno"</span> es = 4000 / <span>"numero_alumnos"</span>, alerta " el pago por alumno es de "<span>"pago_alumno"</span>;
+					<p><span class="cond"> Si </span> <span>"numero_alumnos"</span> es < 30 && > 0, <span class="cond">entonces</span> <span>"pago_alumno"</span> es = 4000 / <span>"numero_alumnos"</span>, </p>
+					<p><strong> alerta </strong>" el pago por alumno es de "<span>"pago_alumno"</span>;
 					</p>
-					<p><span class="cond"> Y si </span> <span> "numero_alumnos"</span> es >= 30 && < 50 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*95, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					<p><span class="cond"> Si no </span> <span> "numero_alumnos"</span> es >= 30 && < 50 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*95,</p>
+					<p><strong> alerta</strong> " el pago del viaje es de "<span>"pago_viaje"</span>;
 					</p>
-					<p><span class="cond"> Y si </span> <span> "numero_alumnos"</span> es >= 50 && < 100 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*70, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					<p><span class="cond"> Si no </span> <span> "numero_alumnos"</span> es >= 50 && < 100 , <span class="cond">entonces</span> <span>"pago viaje"</span> es = <span>"numeroalumnos"</span>*70, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
 					</p>
-					<span class="cond"> Si no, entonces:</span> <span>"pago_viaje"</span> es = <span>"numero_alumnos"</span>*65, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
+					<span class="cond"> Y si no, entonces:</span> <span>"pago_viaje"</span> es = <span>"numero_alumnos"</span>*65, alerta " el pago del viaje es de "<span>"pago_viaje"</span>;
 					</li>
 					<li>Fin</li>
 				</ol>
